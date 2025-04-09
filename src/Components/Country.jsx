@@ -32,6 +32,9 @@ const Country = ({ country, handleVisitedCountries, handleFlags }) => {
         {visited ? "visite" : "Going"}
       </button>
       {visited ? " im visite here" : " i want visite now"}
+
+      {/* props dealink sikheyeche */}
+      
     </div>
   );
 };
