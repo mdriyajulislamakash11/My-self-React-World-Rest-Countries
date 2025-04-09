@@ -4,6 +4,7 @@ const CountryData = () => {
     return (
         <div>
             <small>Country data: </small>
+            {/* countries components theke prop pathay */}
         </div>
     );
 };
