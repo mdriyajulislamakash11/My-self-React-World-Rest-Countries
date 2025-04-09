@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CountryDetails from "./CountryDetails";
 
 const Country = ({ country, handleVisitedCountries, handleFlags }) => {
   const { name, flags, area, population } = country;
@@ -19,22 +20,23 @@ const Country = ({ country, handleVisitedCountries, handleFlags }) => {
       <img src={flags.png} alt="" />
       <p>Area: {area}</p>
       <p>Populations: {population}</p>
-      <hr />
+      {/* <hr /> */}
       <button className="btn" onClick={() => handleFlags(country.flags.png)}>
         Add flags
       </button>
-      <hr />
+      {/* <hr /> */}
       <button className="btn" onClick={() => handleVisitedCountries(country)}>
         Add mark
       </button>
-      <hr />
+      {/* <hr /> */}
       <button className="btn btn-error" onClick={handleVisited}>
         {visited ? "visite" : "Going"}
       </button>
       {visited ? " im visite here" : " i want visite now"}
 
       {/* props dealink sikheyeche */}
-      
+      <hr />
+      <CountryDetails></CountryDetails>
     </div>
   );
 };
